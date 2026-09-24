@@ -10,11 +10,24 @@
  * 
  * Prueba con otros valores iniciales del número de mes para asegurarte de su funcionamiento.*/
  
- 
+import java.util.Scanner;
 public class Practica3{
 	
 		public static void main (String[] args){
 			
+			Scanner sc = new Scanner(System.in);
+			
+	final double year = 12;
+	
+			System.out.println("Escribe el numero referente al mes del año\n");
+	
+	double mesElegido = sc.nextDouble();
+	
+	double porcentaje = (mesElegido/year)*100;
+	
+	System.out.println("\nMes " + mesElegido + " de 12\n");
+	
+	System.out.printf("Porcentaje transcurrido: %.3f", porcentaje);
 	
 			
 	}
